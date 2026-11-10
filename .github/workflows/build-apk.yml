@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - 'alfardous-android-source.zip'
+              - 'alfardous_android_3_5_0.zip'
 
 jobs:
   build:
@@ -23,7 +23,7 @@ jobs:
 
       - name: Extract project
         run: |
-          unzip -q alfardous-android-source.zip -d .
+                    unzip -q alfardous_android_3_5_0.zip -d .
           test -f alfardous_android/app/src/main/assets/index.html
 
       - name: Build APK
